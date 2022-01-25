@@ -34,7 +34,7 @@ p, li, span, label, input, textarea {
 
 a{
     text-decoration: none;
-    color: lightblue;
+    color: navy;
 }
 ul{
     list-style: none;
@@ -144,7 +144,7 @@ h6 { font-size: 16px;}
 
 .left-column{
     grid-area: left-column;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -260,7 +260,7 @@ h6 { font-size: 16px;}
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 100px;
