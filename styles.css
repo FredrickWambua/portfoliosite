@@ -208,7 +208,7 @@ h6 { font-size: 16px;}
     grid-area: right-column;
     display: grid;
     align-content: center;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -281,6 +281,110 @@ h6 { font-size: 16px;}
     justify-content: space-evenly;
     background-color: var(--previewShadow);
 }
+/* card styles */
+.card {
+    --hue: 214;
+    --card-color: hsl(var(--hue), 80%, 40%);
+    --shadow-color: hsla(var(--hue), 80%, 40%, 0.2);
+
+    position: relative;
+    padding: 50px, 30px;
+    text-align: center;
+    box-shadow: 0 10px 15px #0001 ;
+    transition: all 0.5s ease;
+}
+.card:hover {
+    box-shadow: 0 20px 30px #0002;
+}
+
+.card:after {
+    --right: 100%;
+    content: '';
+    position: absolute;
+    inset: calc(100% - 3px) var(--right) 0 0;
+    background: var(--card-color);
+    transition: all 0.5s ease;
+}
+
+.card:hover::after {
+    --right: 0;
+}
+/* card head style */
+
+.card-head {
+    position: relative;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-head ion-icon {
+    font-size: 3em;
+    color: var(--card-color);
+    --ionicon-stroke-width: 0.5em;
+}
+
+.card-head .rounded-border {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--card-color);
+    box-shadow: inset 0 0 20px var(--shadow-color),
+     0 0 20px var(--shadow-color);
+    border-radius: 10em;
+    transform: rotate(-45deg);
+    animation: rotate-360 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .rounded-border {
+    animation-play-state: running;
+}
+
+@keyframes rotate-360{
+    from {transform: rotate(-45deg);}
+    to {transform: rotate(315deg);}
+}
+
+.card-head .circle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--card-color);
+    border-radius: 100%;
+    top: -7px;
+    transform: translateX(-50%);
+    box-shadow: 0 118px 0  var(--card-color);
+}
+
+.card-body {
+    margin-top: 5px;  
+}
+
+.card-body h3 {
+    font-size: 2em;
+    color: hsl(229, 9%, 30%);
+    margin-bottom: 5px;
+    /* font-weight: 600; */
+}
+
+.card-body p {
+    color: hsl(229, 9%, 30%);
+    margin-bottom: 10px;
+}
+
+.card-body .btn {
+    text-decoration: none;
+    color: var(--card-color);
+    font-weight: 600;
+    font-size: 1.65em;
+    opacity: 0.9;
+}
+
+.card-body .btn:hover {
+    opacity: 0.4;
+}
+
 
 .post-wrapper{
     display: grid;
@@ -318,6 +422,16 @@ h6 { font-size: 16px;}
 .post-intro{
     color: #4b5156;
     font-size: 14px;
+}
+
+.repositories-btn{
+    width: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
+    border-radius: 10px;
 }
 
 #contact-form label{
