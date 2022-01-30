@@ -10,12 +10,13 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">   
     <link rel="stylesheet" href="styles.css">
     <link id="theme-style" rel="stylesheet" href="">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <section id="home" class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Fredrick</h1>
+                <h1>Hi, I'm Fredrick Wambua</h1>
             </div>
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
@@ -25,9 +26,9 @@
                         <div id="dot-3" class="browser-dot"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="left-column">
@@ -57,12 +58,13 @@
             </div>
         </div>
     </section>
-
     <section id="about" class="s2">
         <div class="main-container">
+            <h3 style="text-align: center; margin-bottom: 10px;">About Me</h3>
+            <hr style="width: 300px; text-align: center; ">
             <div class="about-wrapper">
                 <div class="about-me">
-                    <h4 style="text-align: center;">More About Me</h4>
+                    <h4 style="text-align: center;">Bio</h4>
                     <p>I am a full stack software developer experienced in JavaScript and Python Programming languages and also written code 
                         using the Object Oriented Programming.
                     </p>
@@ -70,10 +72,11 @@
                         I have done various projects using frameworks such as Django, Flask, Angular and 
                         Django restframework. I have interacted with other technologies such as RESTful APIs, AJAX, 
                         Bootstrap, UI Design, PostgreSQL, Swagger API.
-                    </p>
-                    <hr>
+                    </p>       
+                </div>
+                <div class="expertise">
                     <h4 style="text-align: center;">Top Expertise</h4>
-                    <p>Fullstack developer with primart focus in Django, angular</p>
+                    <p>Fullstack developer with primary focus in Django, angular and GCP.</p>
                     <div id="skills">
                         <ul>
                             <li>Python</li>
@@ -93,60 +96,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="work">
-                    <div class="card card--purple">
-                        <div class="card-head">
-                            <ion-icon><i class="fas fa-code"></i></ion-icon>
-                            <div class="rounded-border">
-                                <span class="circle"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3>Business Strategy</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi. Molestias, incidunt 
-                               </p>
-                              <a href="" class="btn">View Details</a>
-                        </div>
-                    </div>
-                    <div class="card card--mountain_meadow">
-                          <div class="card-head">
-                              <ion-icon><i class="fas fa-code"></i></ion-icon>
-                              <div class="rounded-border">
-                                  <span class="circle"></span>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <h3>Business Strategy</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi. Molestias, incidunt 
-                          
-                              </p>
-                              <a href="" class="btn">View Details</a>
-                          </div>
-                   </div>
-                   <div class="card card--pictorial_carnine">
-                          <div class="card-head">
-                              <ion-icon><i class="fas fa-code"></i></ion-icon>
-                              <div class="rounded-border">
-                                  <span class="circle"></span>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <h3>Business Strategy</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi. Molestias, incidunt 
-                                  </p>
-                                  <a href="https://dev.to/codewithsadee/animated-content-card-with-html-css-2eme" target="_blank" class="btn">View Details</a>
-                          </div>
-                   </div>  
-                </div>
             </div>
-
         </div>
-
     </section>
 
     <section id="projects" class="s1">
         <div class="main-container">
-            <h3 style="text-align: center;">Some of my projects</h3>
+            <h3 style="text-align: center; margin-bottom: 10px;">Some of my projects</h3>
+            <hr style="width: 400px; text-align: center;">
             <div class="post-wrapper">
                 <div class="post">
                     <img class="thumbnail" src="images/portpics/1.png" alt="">
@@ -155,7 +112,7 @@
                         <p class="post-intro">This is an Angular app that uses News.org API endpoints to enable users preview news articles
                              and see all the news articles from a particular news source.
                         </p>
-                        <a href="https://cathupnews.herokuapp.com/">View</a>
+                        <a href="https://cathupnews.herokuapp.com/" target="_blank">View</a>
                     </div>
                 </div>
                 <div class="post">
@@ -165,7 +122,7 @@
                         <p class="post-intro">This is an 'ONGOING' Django app that has various neighborhoods each with its news updates, security and 
                             hospital contacts, businesses and members. 
                         </p>
-                        <a href="https://hoodcatchupnews.herokuapp.com">View</a>
+                        <a href="https://hoodcatchupnews.herokuapp.com" target="_blank">View</a>
                     </div>
                 </div>
                 <div class="post">
@@ -173,7 +130,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Galleria</h6>
                         <p class="post-intro">A personal gallery django application that enables a user to display photos based on categories and users are able to search.</p>
-                        <a href="https://fredspichas.herokuapp.com">View</a>
+                        <a href="https://fredspichas.herokuapp.com" target="_blank">View</a>
                     </div>
                 </div>
                 <div class="post">
@@ -181,7 +138,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">TrackerApp</h6>
                         <p class="post-intro">This is an angular, django and <a href="https://taliban-trackerapp.herokuapp.com/">RestAPI</a> app that hosts various projects from different owners and other people can collaborate on those projects.</p>
-                        <a href="https://samwel-chege.github.io/Project-Tracker">view</a>
+                        <a href="https://samwel-chege.github.io/Project-Tracker" target="_blank">view</a>
                     </div>
                 </div>
                 <div class="post">
@@ -189,7 +146,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Github Profile Search</h6>
                         <p class="post-intro">An angular app that uses github API endpoints to enable a user search for a particular github user profile, see their information and repositories.</p>
-                        <a href="https://fredrickwambua.github.io/githubsearch">View</a>
+                        <a href="https://fredrickwambua.github.io/githubsearch" target="_blank">View</a>
                     </div>
                 </div>
                 <div class="post">
@@ -197,7 +154,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Instagram Clone</h6>
                         <p class="post-intro">This is an 'ONGOING' django project of Instagram clone where users post photos and others sign up to view, like, comment and follow.</p>
-                        <a href="https://fredinstaclone.herokuapp.com/">View</a>
+                        <a href="https://fredinstaclone.herokuapp.com/" target="_blank">View</a>
                     </div>
                 </div>
             </div>
@@ -222,6 +179,20 @@
                 <input id="submit-btn" type="submit" value="Send">
             </form>
         </div>
+    </section>
+    <section class="s3">
+        <footer class="footer">
+            <p class="footer__title">Fredrick Wambua</p>
+            <p>+254 710 142 510</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=100005515578392" class="footer__icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/_fredricks/" class="footer__icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Fredricks_dataG" class="footer__icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/myselffredrickwambua/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/FredrickWambua" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
     </section>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
