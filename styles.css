@@ -214,7 +214,7 @@ h6 { font-size: 16px;}
 .right-column{
     grid-area: right-column;
     display: grid;
-    align-content: center;
+    align-content: left;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -232,7 +232,7 @@ h6 { font-size: 16px;}
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 300px;
-    height: 180px;
+    height: 250px;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -278,9 +278,9 @@ h6 { font-size: 16px;}
 .about-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    gap: 100px;
+    gap: 50px;
 }
 
 .about-me{
